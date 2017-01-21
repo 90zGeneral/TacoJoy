@@ -15,6 +15,7 @@
 		D5FC35441E32DD4D00327D0A /* TacoJoyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FC35431E32DD4D00327D0A /* TacoJoyTests.swift */; };
 		D5FC35551E32E4A800327D0A /* DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FC35541E32E4A800327D0A /* DropShadow.swift */; };
 		D5FC35571E32E68200327D0A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FC35561E32E68200327D0A /* HeaderView.swift */; };
+		D5FC35591E32F19E00327D0A /* Taco.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FC35581E32F19E00327D0A /* Taco.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		D5FC35451E32DD4D00327D0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5FC35541E32E4A800327D0A /* DropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropShadow.swift; sourceTree = "<group>"; };
 		D5FC35561E32E68200327D0A /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		D5FC35581E32F19E00327D0A /* Taco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Taco.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 		D5FC35501E32DDE500327D0A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D5FC35581E32F19E00327D0A /* Taco.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				D5FC35311E32DD4D00327D0A /* MainVC.swift in Sources */,
 				D5FC35551E32E4A800327D0A /* DropShadow.swift in Sources */,
 				D5FC352F1E32DD4D00327D0A /* AppDelegate.swift in Sources */,
+				D5FC35591E32F19E00327D0A /* Taco.swift in Sources */,
 				D5FC35571E32E68200327D0A /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,6 +472,7 @@
 				D5FC354A1E32DD4D00327D0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5FC354B1E32DD4D00327D0A /* Build configuration list for PBXNativeTarget "TacoJoyTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +481,7 @@
 				D5FC354D1E32DD4D00327D0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
