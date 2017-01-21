@@ -13,6 +13,8 @@
 		D5FC35361E32DD4D00327D0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5FC35351E32DD4D00327D0A /* Assets.xcassets */; };
 		D5FC35391E32DD4D00327D0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5FC35371E32DD4D00327D0A /* LaunchScreen.storyboard */; };
 		D5FC35441E32DD4D00327D0A /* TacoJoyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FC35431E32DD4D00327D0A /* TacoJoyTests.swift */; };
+		D5FC35551E32E4A800327D0A /* DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FC35541E32E4A800327D0A /* DropShadow.swift */; };
+		D5FC35571E32E68200327D0A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FC35561E32E68200327D0A /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		D5FC353F1E32DD4D00327D0A /* TacoJoyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TacoJoyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5FC35431E32DD4D00327D0A /* TacoJoyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacoJoyTests.swift; sourceTree = "<group>"; };
 		D5FC35451E32DD4D00327D0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5FC35541E32E4A800327D0A /* DropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropShadow.swift; sourceTree = "<group>"; };
+		D5FC35561E32E68200327D0A /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 			children = (
 				D5FC35321E32DD4D00327D0A /* Main.storyboard */,
 				D5FC35371E32DD4D00327D0A /* LaunchScreen.storyboard */,
+				D5FC35561E32E68200327D0A /* HeaderView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 		D5FC35521E32DE8200327D0A /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				D5FC35541E32E4A800327D0A /* DropShadow.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -250,7 +256,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5FC35311E32DD4D00327D0A /* MainVC.swift in Sources */,
+				D5FC35551E32E4A800327D0A /* DropShadow.swift in Sources */,
 				D5FC352F1E32DD4D00327D0A /* AppDelegate.swift in Sources */,
+				D5FC35571E32E68200327D0A /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

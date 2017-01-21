@@ -9,17 +9,17 @@
 import UIKit
 
 class MainVC: UIViewController {
+    
+    //Outlet
+    @IBOutlet weak var headerView: HeaderView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //Call addDropShadow on the headerView
+        headerView.addDropShadow()
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
