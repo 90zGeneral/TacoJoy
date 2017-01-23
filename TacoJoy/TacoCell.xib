@@ -11,15 +11,43 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TacoCell" customModule="TacoJoy" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TacoCell" id="gTV-IL-0wX" customClass="TacoCell" customModule="TacoJoy" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Fish" translatesAutoresizingMaskIntoConstraints="NO" id="J1T-Cd-QC8">
+                        <rect key="frame" x="0.0" y="0.0" width="170" height="145.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fish Taco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6e-3e-uZi">
+                        <rect key="frame" x="0.0" y="150.5" width="170" height="19.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
             </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="f6e-3e-uZi" secondAttribute="bottom" id="6dv-GS-hxc"/>
+                <constraint firstItem="f6e-3e-uZi" firstAttribute="top" secondItem="J1T-Cd-QC8" secondAttribute="bottom" constant="5" id="EN4-H5-Xr5"/>
+                <constraint firstItem="f6e-3e-uZi" firstAttribute="top" secondItem="J1T-Cd-QC8" secondAttribute="bottom" constant="5" id="Txh-bo-Cqu"/>
+                <constraint firstAttribute="trailing" secondItem="f6e-3e-uZi" secondAttribute="trailing" id="cju-2M-TvO"/>
+                <constraint firstItem="f6e-3e-uZi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="eIn-Ip-GaK"/>
+                <constraint firstItem="J1T-Cd-QC8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ju9-sz-DbR"/>
+                <constraint firstItem="J1T-Cd-QC8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="leo-Ud-6VS"/>
+                <constraint firstAttribute="trailing" secondItem="J1T-Cd-QC8" secondAttribute="trailing" id="zsO-WX-HRI"/>
+            </constraints>
             <size key="customSize" width="170" height="170"/>
+            <connections>
+                <outlet property="tacoCellImg" destination="J1T-Cd-QC8" id="jY3-XX-vlg"/>
+                <outlet property="tacoCellLbl" destination="f6e-3e-uZi" id="N2V-zG-vp5"/>
+            </connections>
             <point key="canvasLocation" x="52" y="21"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="Fish" width="1024" height="768"/>
+    </resources>
 </document>
