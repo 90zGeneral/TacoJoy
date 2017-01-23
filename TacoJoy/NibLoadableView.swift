@@ -14,7 +14,7 @@ protocol NibLoadableView: class {}
 //Constraint to a UIView
 extension NibLoadableView where Self: UIView {
     
-    //
+    //Pass the nib name as a string
     static var nibName: String {
         return String(describing: self)
     }

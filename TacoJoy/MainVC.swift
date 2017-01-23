@@ -56,6 +56,7 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+/*
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TacoCell", for: indexPath) as? TacoCell {
             let chosenTaco = dataServiceInstance.tacoArray[indexPath.row]
             cell.configureCell(taco: chosenTaco)
@@ -64,6 +65,12 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         }else {
             return UICollectionViewCell()
         }
+ */
+        //The reuseIdentifier is not needed here since I created it in my custom protocol
+        let cell = collectionView.dequeueReusableCell(forIndexPath: indexPath) as TacoCell
+        let chosenCell = dataServiceInstance.tacoArray[indexPath.row]
+        cell.configureCell(taco: chosenCell)
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
