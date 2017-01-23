@@ -31,6 +31,9 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         dataServiceInstance.delegate = self
         dataServiceInstance.loadTastyTacoData()
         
+        //Call the shuffle method on the array
+        dataServiceInstance.tacoArray.shuffle()
+        
 /*
         //OLD WAY: To load up the nib cell into the collectionView when the view loads.
         let nib = UINib(nibName: "TacoCell", bundle: nil)
