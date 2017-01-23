@@ -20,11 +20,24 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.collectionView.delegate = self
-        self.collectionView.dataSource = self
+        //Allow the collectionView to communicate with the viewController
+        collectionView.delegate = self
+        collectionView.dataSource = self
         
         //Call addDropShadow on the headerView
         headerView.addDropShadow()
+        
+        //Access the delegate load the taco data when view loads
+        dataServiceInstance.delegate = self
+        dataServiceInstance.loadTastyTacoData()
+        
+/*
+        //OLD WAY: To load up the nib cell into the collectionView when the view loads.
+        let nib = UINib(nibName: "TacoCell", bundle: nil)
+        collectionView.register(nib, forCellWithReuseIdentifier: "TacoCell")
+ */
+        //NEW WAY: To load up the nib cell into the collectionView when the view loads. Also, conform the TacoCell to NibLoadableView
+        collectionView.registeringNib(TacoCell.self)
         
     }
     

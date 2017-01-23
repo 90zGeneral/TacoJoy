@@ -8,17 +8,14 @@
 
 import UIKit
 
-class TacoCell: UICollectionViewCell {
+class TacoCell: UICollectionViewCell, NibLoadableView {
     
     //Outlets
     @IBOutlet weak var tacoCellImg: UIImageView!
     @IBOutlet weak var tacoCellLbl: UILabel!
     
-    var taco: Taco!
-    
     //Cell configuration to get its values from a Taco
     func configureCell(taco: Taco) {
-        self.taco = taco
         
         //Update the cell views
         tacoCellImg.image = UIImage(named: taco.meatType.rawValue)

@@ -18,6 +18,7 @@ class DataService {
     //Singleton
     static let sharedInstance = DataService()
     
+    //To access the protocol
     weak var delegate: DataServiceDelegate?
     
     //Array to hold the tacos
