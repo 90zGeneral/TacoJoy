@@ -23,6 +23,7 @@
 		D5FC35631E35A5BC00327D0A /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FC35621E35A5BC00327D0A /* NibLoadableView.swift */; };
 		D5FC35651E35A6E600327D0A /* CollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FC35641E35A6E600327D0A /* CollectionView+Ext.swift */; };
 		D5FC35671E36941800327D0A /* MutableCollection+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FC35661E36941800327D0A /* MutableCollection+Ext.swift */; };
+		D5FC35691E36AAC800327D0A /* Shakable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FC35681E36AAC800327D0A /* Shakable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		D5FC35621E35A5BC00327D0A /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
 		D5FC35641E35A6E600327D0A /* CollectionView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionView+Ext.swift"; sourceTree = "<group>"; };
 		D5FC35661E36941800327D0A /* MutableCollection+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MutableCollection+Ext.swift"; sourceTree = "<group>"; };
+		D5FC35681E36AAC800327D0A /* Shakable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shakable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				D5FC35541E32E4A800327D0A /* DropShadow.swift */,
 				D5FC35601E35A39B00327D0A /* ReusableView.swift */,
 				D5FC35621E35A5BC00327D0A /* NibLoadableView.swift */,
+				D5FC35681E36AAC800327D0A /* Shakable.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5FC35691E36AAC800327D0A /* Shakable.swift in Sources */,
 				D5FC355E1E35910000327D0A /* TacoCell.swift in Sources */,
 				D5FC35671E36941800327D0A /* MutableCollection+Ext.swift in Sources */,
 				D5FC35311E32DD4D00327D0A /* MainVC.swift in Sources */,

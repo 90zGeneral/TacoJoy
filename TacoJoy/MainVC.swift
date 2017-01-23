@@ -47,6 +47,7 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     //To conform to custom protocol
     func TastyTacoDataLoaded() {
         print("Tasty Taco Data Loaded")
+        collectionView.reloadData()
     }
     
     //The 3 methods below is needed to conform to UICollectionView delegate and dataSource
@@ -71,13 +72,17 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
  */
         //The reuseIdentifier is not needed here since I created it in my custom protocol
         let cell = collectionView.dequeueReusableCell(forIndexPath: indexPath) as TacoCell
-        let chosenCell = dataServiceInstance.tacoArray[indexPath.row]
-        cell.configureCell(taco: chosenCell)
+        let theCell = dataServiceInstance.tacoArray[indexPath.row]
+        cell.configureCell(taco: theCell)
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        if let cell = collectionView.cellForItem(at: indexPath) as? TacoCell {
+            
+            //Call the shake method when a cell is selected
+            cell.shake()
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
